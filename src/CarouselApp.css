@@ -1,0 +1,15 @@
+.img {
+  width: 869px;
+  height: 580px;
+  max-width: 2106px;
+  max-height: 1406px;
+  object-fit: contain;
+}
+
+.vimg {
+  width: 387px;
+  height: 580px;
+  max-width: 1406px;
+  max-height: 2106px;
+  object-fit: contain;
+}
