@@ -19,7 +19,7 @@ export class CarouselApp extends Component {
 
   render() {
     return (
-      <MDBContainer>
+      // <MDBContainer>
         <MDBCarousel activeItem={1} length={this.ls.length} showControls={true} showIndicators={true} className="z-depth-1">
           <MDBCarouselInner>
             {
@@ -40,7 +40,7 @@ export class CarouselApp extends Component {
             }
           </MDBCarouselInner>
         </MDBCarousel>
-      </MDBContainer>
+      // </MDBContainer>
     )
   }
 }
