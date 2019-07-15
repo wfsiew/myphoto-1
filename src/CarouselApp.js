@@ -10,7 +10,7 @@ export class CarouselApp extends Component {
 
   isVertical(x) {
     let b = false;
-    if (x == 2313 || x == 2353 || x == 2455) {
+    if (x === 2313 || x === 2353 || x === 2455) {
       b = true;
     }
 
@@ -19,7 +19,7 @@ export class CarouselApp extends Component {
 
   render() {
     return (
-      // <MDBContainer>
+      <MDBContainer>
         <MDBCarousel activeItem={1} length={this.ls.length} showControls={true} showIndicators={true} className="z-depth-1">
           <MDBCarouselInner>
             {
@@ -28,10 +28,10 @@ export class CarouselApp extends Component {
                   <MDBCarouselItem itemId={i + 1}>
                     <MDBView>
                       {this.isVertical(k) && (
-                        <img className="d-block w-100 img-fluid" src={`./photo/MC3_${k}.jpg`} alt={`Slide #${i + 1}`} />
+                        <img className="d-block w-100" src={`./photo/MC3_${k}.jpg`} alt={`Slide #${i + 1}`} />
                       )}
                       {!this.isVertical(k) && (
-                        <img className="d-block w-100 img-fluid" src={`./photo/MC3_${k}.jpg`} alt={`Slide #${i + 1}`} />
+                        <img className="d-block w-100" src={`./photo/MC3_${k}.jpg`} alt={`Slide #${i + 1}`} />
                       )}
                     </MDBView>
                   </MDBCarouselItem>
@@ -40,7 +40,7 @@ export class CarouselApp extends Component {
             }
           </MDBCarouselInner>
         </MDBCarousel>
-      // </MDBContainer>
+      </MDBContainer>
     )
   }
 }
